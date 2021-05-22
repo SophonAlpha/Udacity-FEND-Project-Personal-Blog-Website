@@ -15,8 +15,21 @@ Lorem ipsum generator:
 Images:
  https://pixabay.com/
 
+Introduction to BEM:
+  https://css-tricks.com/bem-101/
+
 -->
 
+
+<!--
+TODO: for article html use this to credit photos:
+
+<figure class="photo">
+  <img class="photo__img" src="me.jpg">
+  <figcaption class="photo__caption">Look at me!</figcaption>
+</figure>
+
+-->
 
 <!doctype html>
 
@@ -36,90 +49,85 @@ Images:
 
 <body>
 
-<div class="container">
-  <div class="box-1 header">
+<div class="blog-homepage">
+  <div class="blog-homepage__header">
     <h1>The Blog</h1>
     <p><i>"Make it as simple as possible, but not simpler."</i></p>
     <p>Albert Einstein</p>
   </div>
-  <div class="content-area">
-    <a class="article-preview-link" href="https://google.com">
-      <div class="article-preview">
-        <div class="article-preview-img">
-          <img src="img/buildings-690364_1920.jpg"
+  <div class="blog-homepage__content">
+    <a class="article-card-link" href="https://google.com">
+      <div class="article-card">
+        <div class="article-card__image">
+          <img class="image"
+               src="img/buildings-690364_1920.jpg"
                alt="High altitude view of city skyline">
         </div>
-        <div class="article-preview-block">
-          <p class="category-text">Travel</p>
-          <h2 class="header-text">A Guide To City Travel At Any Age</h2>
-          <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipiscing, elit nam
-            fermentum viverra sem, et magna etiam quisque nullam. Mi a ornare gravida senectus
-            praesent metus ullamcorper rhoncus, ac tristique consequat habitasse fermentum in mauris
-            adipiscing rutrum, tempor id imperdiet nullam commodo sem venenatis. Taciti tincidunt
-            himenaeos aptent tempor lobortis ... </p>
-          <p class="date-text">25 July 2020</p>
-        </div>
+        <p class="article-card__category">Travel</p>
+        <h2 class="article-card__header">A Guide To City Travel At Any Age</h2>
+        <p class="article-card__excerpt">Lorem ipsum dolor sit amet consectetur adipiscing, elit nam
+          fermentum viverra sem, et magna etiam quisque nullam. Mi a ornare gravida senectus
+          praesent metus ullamcorper rhoncus, ac tristique consequat habitasse fermentum in mauris
+          adipiscing rutrum, tempor id imperdiet nullam commodo sem venenatis. Taciti tincidunt
+          himenaeos aptent tempor lobortis ... </p>
+        <p class="article-card__date">25 July 2020</p>
       </div>
     </a>
-    <a class="article-preview-link" href="https://google.com">
-      <div class="article-preview">
-        <div class="article-preview-img">
-          <img src="img/kuala-lumpur-1820944_1920.jpg"
+    <a class="article-card-link" href="https://google.com">
+      <div class="article-card">
+        <div class="article-card__image">
+          <img class="image"
+               src="img/kuala-lumpur-1820944_1920.jpg"
                alt="Night view of Kuala Lumpur skyline">
         </div>
-        <div class="article-preview-block">
-          <p class="category-text">Travel</p>
-          <h2 class="header-text">10 Secret Things You Didn't Know About City Travel</h2>
-          <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipiscing, elit nam
-            fermentum viverra sem, et magna etiam quisque nullam. Mi a ornare gravida senectus
-            praesent metus ullamcorper rhoncus, ac tristique consequat habitasse fermentum in mauris
-            adipiscing rutrum, tempor id imperdiet nullam commodo sem venenatis. Taciti tincidunt
-            himenaeos aptent tempor lobortis ... </p>
-          <p class="date-text">5 May 2020</p>
-        </div>
+        <p class="article-card__category">Travel</p>
+        <h2 class="article-card__header">10 Secret Things You Didn't Know About City Travel</h2>
+        <p class="article-card__excerpt">Lorem ipsum dolor sit amet consectetur adipiscing, elit nam
+          fermentum viverra sem, et magna etiam quisque nullam. Mi a ornare gravida senectus
+          praesent metus ullamcorper rhoncus, ac tristique consequat habitasse fermentum in mauris
+          adipiscing rutrum, tempor id imperdiet nullam commodo sem venenatis. Taciti tincidunt
+          himenaeos aptent tempor lobortis ... </p>
+        <p class="article-card__date">5 May 2020</p>
       </div>
     </a>
-    <a class="article-preview-link" href="https://google.com">
-      <div class="article-preview">
-        <div class="article-preview-img">
-          <img src="img/red-wine-2443699_1920.jpg"
+    <a class="article-card-link" href="https://google.com">
+      <div class="article-card">
+        <div class="article-card__image">
+          <img class="image"
+               src="img/red-wine-2443699_1920.jpg"
                alt="Bottle of red wine, two wine glasses, open fire in the background">
         </div>
-        <div class="article-preview-block">
-          <p class="category-text">Food, Wine</p>
-          <h2 class="header-text">What Everyone Ought To Know About Pinot Grigio</h2>
-          <p class="preview-text">Gonzales Winery brings together stale Cap’n Crunch midtones and a
-            poorly-filtered shrimp bouquet in their 2012 Sauvignon Blanc ... </p>
-          <p class="date-text">7 February 2020</p>
-        </div>
+        <p class="article-card__category">Food, Wine</p>
+        <h2 class="article-card__header">What Everyone Ought To Know About Pinot Grigio</h2>
+        <p class="article-card__excerpt">Gonzales Winery brings together stale Cap’n Crunch midtones and a
+          poorly-filtered shrimp bouquet in their 2012 Sauvignon Blanc ... </p>
+        <p class="article-card__date">7 February 2020</p>
       </div>
     </a>
-    <a class="article-preview-link" href="https://google.com">
-      <div class="article-preview">
-        <div class="article-preview-img">
-          <img src="img/hamburger-494706_1920.jpg"
+    <a class="article-card-link" href="https://google.com">
+      <div class="article-card">
+        <div class="article-card__image">
+          <img class="image"
+               src="img/hamburger-494706_1920.jpg"
                alt="Bottle of red wine, two wine glasses, open fire in the background">
         </div>
-        <div class="article-preview-block">
-          <p class="category-text">Food</p>
-          <h2 class="header-text">Don't Fall For This Hamburger Scam</h2>
-          <p class="preview-text">Raw Kale and Oyster Mushroom Bread with a wisp of Savory Almond
-            Pie. </p>
-          <p class="preview-text">Lorem ipsum dolor sit amet consectetur adipiscing elit neque,
-            cursus lacinia semper nibh donec vestibulum ligula class, tellus consequat mattis
-            placerat fusce eros sodales. Vitae faucibus facilisis iaculis sem auctor viverra
-            molestie ornare, rutrum consequat eget proin odio augue pretium litora nullam, sociosqu
-            felis class sit ut enim curae. Sagittis praesent commodo ...</p>
-
-          <p class="date-text">7 February 2020</p>
-        </div>
+        <p class="article-card__category">Food</p>
+        <h2 class="article-card__header">Don't Fall For This Hamburger Scam</h2>
+        <p class="article-card__excerpt">Raw Kale and Oyster Mushroom Bread with a wisp of Savory Almond
+          Pie. </p>
+        <p class="article-card__excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit neque,
+          cursus lacinia semper nibh donec vestibulum ligula class, tellus consequat mattis
+          placerat fusce eros sodales. Vitae faucibus facilisis iaculis sem auctor viverra
+          molestie ornare, rutrum consequat eget proin odio augue pretium litora nullam, sociosqu
+          felis class sit ut enim curae. Sagittis praesent commodo ...</p>
+        <p class="article-card__date">7 February 2020</p>
       </div>
     </a>
-    <div class="article-preview">article 5</div>
-    <div class="article-preview">article 6</div>
-    <div class="article-preview">article 7</div>
+    <div class="article-card">article 5</div>
+    <div class="article-card">article 6</div>
+    <div class="article-card">article 7</div>
   </div>
-  <div class="box-1 footer">Footer</div>
+  <div class="blog-homepage__footer">Footer</div>
 </div>
 
 </body>
