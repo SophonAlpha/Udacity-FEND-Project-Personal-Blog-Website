@@ -1,0 +1,22 @@
+/*
+BEM style class names. Introduction to BEM:
+  https://css-tricks.com/bem-101/
+*/
+
+.article {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.article__content {}
+
+.article__image {
+  width: 60%;
+  height: 400px;
+  float: right;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-left: 15px;
+}
