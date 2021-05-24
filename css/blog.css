@@ -3,6 +3,10 @@ BEM style class names. Introduction to BEM:
   https://css-tricks.com/bem-101/
 */
 
+:root {
+
+}
+
 .blog {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -21,43 +25,92 @@ BEM style class names. Introduction to BEM:
   background-color: var(--charcoal);
   color: white;
   grid-area: hd;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "left right";
-}
-
-.blog__header-left {
-  grid-area: left;
-  padding: 10px
-}
-
-.blog__header-right {
-  grid-area: right;
-}
-
-.blog__return-button {
-  background-color: var(--burnt-sienna);
-  color: var(--charcoal);
-  padding: 10px;
-  width: 10em;
-  text-align: center;
-  float: right;
-  margin-top: 5em;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
-}
-
-.blog__return-button:hover {
-  box-shadow: -12px 12px 16px rgba(0, 0, 0, 0.3);
-}
-
-.blog__return-button:active {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  top: 3px;
-  right: 3px;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);
+  /*display: grid;*/
+  /*grid-template-columns: 1fr;*/
+  /*grid-template-rows: 1fr 1fr;*/
+  /*grid-template-areas:*/
+  /*  "title"*/
+  /*  "navbar"*/
 }
+
+
+
+/*@media screen and (min-width: 600px) {*/
+/*  .blog__header {*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    grid-template-rows: 1fr;*/
+/*    grid-template-areas:*/
+/*      "title navbar";*/
+/*  }*/
+/*}*/
+
+.blog__header-title {
+  grid-area: title;
+  padding: 10px;
+  border: red 1px solid;
+}
+
+/*.blog__header-navbar {*/
+/*  grid-area: navbar;*/
+/*  !*position: relative;*!*/
+/*  !*margin-left: auto;*!*/
+/*}*/
+
+.blog__navbar {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  border: red 1px solid;
+}
+
+
+
+.blog__navbar-item {
+  float: left;
+  align-content: center;
+  width: 5em;
+  text-align: center;
+  transition: 0.2s;
+  border: red 1px solid;
+}
+
+.blog__navbar-item:hover {
+  color: var(--burnt-sienna);
+  font-weight: bold;
+}
+
+/*.blog__return-button {*/
+/*  background-color: var(--burnt-sienna);*/
+/*  color: var(--charcoal);*/
+/*  padding: 10px;*/
+/*  width: 10em;*/
+/*  text-align: center;*/
+/*  float: right;*/
+/*  margin-top: 5em;*/
+/*  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);*/
+/*  transition: 0.3s;*/
+/*}*/
+
+/*.blog__return-button:hover {*/
+/*  box-shadow: -12px 12px 16px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*.blog__return-button:active {*/
+/*  position: relative;*/
+/*  top: 3px;*/
+/*  right: 3px;*/
+/*  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3);*/
+/*}*/
 
 .blog__content {
   /* Default grid layout, narrow viewports */
@@ -75,7 +128,7 @@ BEM style class names. Introduction to BEM:
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .blog__content {
     grid-template-columns: 1fr 1fr 1fr;
   }

@@ -2,6 +2,7 @@
 
 Ideas for blog website designs:
   https://colorlib.com/wp/free-blogger-templates/
+  https://zendepot.de/finanzielle-ziele/
 
 Create color palettes:
   https://coolors.co/palettes/trending
@@ -20,16 +21,6 @@ Introduction to BEM:
 
 -->
 
-
-<!--
-TODO: for article html use this to credit photos:
-
-<figure class="photo">
-  <img class="photo__img" src="me.jpg">
-  <figcaption class="photo__caption">Look at me!</figcaption>
-</figure>
-
--->
 
 <!doctype html>
 
@@ -51,10 +42,17 @@ TODO: for article html use this to credit photos:
 
 <div class="blog">
   <div class="blog__header">
-    <div class="blog__header-left">
+    <div class="blog__header-title">
       <h1>The Blog</h1>
       <p><i>"Make it as simple as possible, but not simpler."</i></p>
       <p>Albert Einstein</p>
+    </div>
+    <div class="blog__header-navbar">
+      <ul class="blog__navbar">
+        <li class="blog__navbar-item"><a class="no-style-link" href="about.html">About</a></li>
+        <li class="blog__navbar-item"><a class="no-style-link" href="subscribe.html">Subscribe</a></li>
+        <li class="blog__navbar-item"><a class="no-style-link" href="index.html">Home</a></li>
+      </ul>
     </div>
   </div>
   <div class="blog__content">
