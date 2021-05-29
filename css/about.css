@@ -1,0 +1,19 @@
+.about {
+  background-color: black;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.about__content {
+  position: absolute;
+  top: 4em;
+  right: 0;
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  padding: 2em;
+  max-width: 30em;
+}

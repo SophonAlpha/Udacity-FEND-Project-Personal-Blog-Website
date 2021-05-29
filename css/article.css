@@ -5,13 +5,73 @@
   margin: auto;
 }
 
-.article__content {}
+.article__content {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.article__category {
+  color: var(--burnt-sienna);
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.article__text {}
 
 .article__image {
-  width: 60%;
-  height: 400px;
-  float: right;
-  border-radius: 7px;
-  overflow: hidden;
-  margin-left: 15px;
+  height: 200px;
+  margin: 1em -5em 2em;
 }
+
+.article__author {
+  display: flex;
+  flex-direction: row;
+}
+
+.article__author-photo {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.article__author-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  align-self: center;
+}
+
+.article__author-name {
+  margin: 0 0 0.5em 0;
+  font-size: 0.8em;
+}
+
+.article__author-title {
+  margin: 0 0 0.5em 0;
+  font-size: 0.8em;
+}
+
+.article__article-date {
+  margin: 0 0 0.5em 0;
+  font-size: 0.8em;
+}
+
+.article__author-social {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+/* a few adjustments to the Font Awesome fonts */
+
+.fa-linkedin,
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-google-plus-square,
+.fa-reddit-square,
+.fa-envelope-square {
+  color: var(--charcoal);
+}
+
