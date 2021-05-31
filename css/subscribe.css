@@ -23,6 +23,8 @@
 
 .subscribe__form {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -32,7 +34,7 @@
   margin-left: 10px;
   margin-right: 10px;
   height: 2.5em;
-  width: 20em;
+  width: 15em;
   font-size: 1em;
   padding-left: 15px;
   padding-right: 15px;
@@ -55,4 +57,11 @@
 
 .button:hover {
   background-color: var(--charcoal);
+}
+
+@media screen and (min-width: 600px) {
+  .subscribe__form {
+    flex-direction: row;
+    gap: 0;
+  }
 }
